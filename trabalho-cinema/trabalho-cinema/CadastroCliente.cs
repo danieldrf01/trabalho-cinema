@@ -30,7 +30,7 @@ namespace trabalho_cinema
 
             try
             {
-                int cpf = Convert.ToInt32(mbCpf.Text);
+                int cpf = Convert.ToInt32(mbCpf.Text.Replace(".", "").Replace("-", ""));
             }
             catch
             {
