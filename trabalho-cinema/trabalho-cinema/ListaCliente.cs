@@ -16,5 +16,10 @@ namespace trabalho_cinema
         {
             InitializeComponent();
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            new cb().ShowDialog();
+        }
     }
 }

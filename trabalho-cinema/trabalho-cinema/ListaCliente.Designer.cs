@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvListaCliente = new System.Windows.Forms.DataGridView();
             this.btnApagar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
@@ -43,15 +43,15 @@
             this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBusca = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaCliente)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvListaCliente
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvListaCliente.AllowUserToAddRows = false;
+            this.dgvListaCliente.AllowUserToDeleteRows = false;
+            this.dgvListaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListaCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nome,
             this.CPF,
             this.Sexo,
@@ -60,15 +60,17 @@
             this.Endereço,
             this.CEP,
             this.Telefone});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 66);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1036, 374);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvListaCliente.Location = new System.Drawing.Point(12, 66);
+            this.dgvListaCliente.Name = "dgvListaCliente";
+            this.dgvListaCliente.ReadOnly = true;
+            this.dgvListaCliente.Size = new System.Drawing.Size(1036, 374);
+            this.dgvListaCliente.TabIndex = 0;
             // 
             // btnApagar
             // 
+            this.btnApagar.BackColor = System.Drawing.Color.White;
             this.btnApagar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApagar.ForeColor = System.Drawing.Color.Red;
             this.btnApagar.Image = global::trabalho_cinema.Properties.Resources.delete;
             this.btnApagar.Location = new System.Drawing.Point(386, 12);
             this.btnApagar.Name = "btnApagar";
@@ -76,11 +78,13 @@
             this.btnApagar.TabIndex = 4;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.UseVisualStyleBackColor = false;
             // 
             // btnEditar
             // 
+            this.btnEditar.BackColor = System.Drawing.Color.White;
             this.btnEditar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.Green;
             this.btnEditar.Image = global::trabalho_cinema.Properties.Resources.clipboard_with_pencil_;
             this.btnEditar.Location = new System.Drawing.Point(274, 12);
             this.btnEditar.Name = "btnEditar";
@@ -88,11 +92,13 @@
             this.btnEditar.TabIndex = 3;
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.UseVisualStyleBackColor = false;
             // 
             // btnCadastrar
             // 
+            this.btnCadastrar.BackColor = System.Drawing.Color.White;
             this.btnCadastrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.ForeColor = System.Drawing.Color.Blue;
             this.btnCadastrar.Image = global::trabalho_cinema.Properties.Resources.plus_symbol_in_a_rounded_black_square;
             this.btnCadastrar.Location = new System.Drawing.Point(139, 12);
             this.btnCadastrar.Name = "btnCadastrar";
@@ -100,11 +106,14 @@
             this.btnCadastrar.TabIndex = 2;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnAtualizar
             // 
+            this.btnAtualizar.BackColor = System.Drawing.Color.White;
             this.btnAtualizar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtualizar.ForeColor = System.Drawing.Color.Black;
             this.btnAtualizar.Image = global::trabalho_cinema.Properties.Resources.refresh_button;
             this.btnAtualizar.Location = new System.Drawing.Point(12, 12);
             this.btnAtualizar.Name = "btnAtualizar";
@@ -112,7 +121,7 @@
             this.btnAtualizar.TabIndex = 1;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.UseVisualStyleBackColor = false;
             // 
             // Nome
             // 
@@ -190,10 +199,10 @@
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnAtualizar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvListaCliente);
             this.Name = "ListaCliente";
             this.Text = "ListaCliente";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,7 +210,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvListaCliente;
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnEditar;
