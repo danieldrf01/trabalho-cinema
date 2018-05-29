@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace trabalho_cinema
 {
-    class Cliente
+    public class Cliente
     {
         public string Nome;
         public string Cpf;
         public string Email;
         public string Sexo;
-        public int DataDeNascimento;
+        public string DataDeNascimento;
         public string Estado;
         public string Cidade;
         public string Endereco;
-        public int Numero;
+        public string Numero;
         public string Bairro;
         public string Complemento;
         public string Cep;
-        public int Telefone;
+        public string Telefone;
 
     }
 }
