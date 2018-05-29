@@ -9,7 +9,7 @@ namespace trabalho_cinema
     class Cliente
     {
         public string Nome;
-        public int Cpf;
+        public string Cpf;
         public string Email;
         public string Sexo;
         public int DataDeNascimento;
@@ -19,7 +19,7 @@ namespace trabalho_cinema
         public int Numero;
         public string Bairro;
         public string Complemento;
-        public int Cep;
+        public string Cep;
         public int Telefone;
 
     }

@@ -19,7 +19,7 @@ namespace trabalho_cinema
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            new cb().ShowDialog();
+            new CadastroCliente().ShowDialog();
         }
     }
 }
