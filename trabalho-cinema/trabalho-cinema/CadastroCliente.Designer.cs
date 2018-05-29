@@ -340,7 +340,7 @@
             this.button1.Text = "Cancelar";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
-           
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // txtNome
             // 
@@ -358,7 +358,7 @@
             this.txtCidade.Size = new System.Drawing.Size(220, 20);
             this.txtCidade.TabIndex = 7;
             // 
-            // cb
+            // CadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -392,7 +392,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "cb";
+            this.Name = "CadastroCliente";
             this.Text = "CadastroCliente";
             this.ResumeLayout(false);
             this.PerformLayout();

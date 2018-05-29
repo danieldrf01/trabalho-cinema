@@ -150,21 +150,19 @@ namespace trabalho_cinema
 
             Cliente cliente = new Cliente() 
             {
-
-            Nome = txtNome.Text,
-            Cpf = mbCpf.Text,
-            Sexo = Convert.ToString(cbSexo.SelectedItem),
-            Estado = Convert.ToString(cbEstado.SelectedItem),
-            Email = txtEmail.Text,
-            DataDeNascimento = Convert.ToInt32(mbDataDeNascimento.Text),
-            Cidade = txtCidade.Text,
-            Endereco = txtEndereco.Text,
-            Numero = Convert.ToInt32(txtNumero.Text),
-            Complemento = txtComplemento.Text,
-            Telefone = Convert.ToInt32(txtTelefone.Text),
-            Bairro = txtBairro.Text,
-            Cep = mbCep.Text 
-
+                Nome = txtNome.Text,
+                Cpf = mbCpf.Text,
+                Sexo = Convert.ToString(cbSexo.SelectedItem),
+                Estado = Convert.ToString(cbEstado.SelectedItem),
+                Email = txtEmail.Text,
+                DataDeNascimento = mbDataDeNascimento.Text,
+                Cidade = txtCidade.Text,
+                Endereco = txtEndereco.Text,
+                Numero = txtNumero.Text,
+                Complemento = txtComplemento.Text,
+                Telefone = txtTelefone.Text,
+                Bairro = txtBairro.Text,
+                Cep = mbCep.Text 
             };
 
             if (posicao >= 0)
@@ -200,7 +198,7 @@ namespace trabalho_cinema
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             Dispose();
         }
