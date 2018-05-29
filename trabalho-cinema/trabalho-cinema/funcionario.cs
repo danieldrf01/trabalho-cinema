@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace trabalho_cinema
 {
-    class funcionario
+    public class funcionario
     {
         public string NomeCompleto;
         public string Curso;
         public string Nacionalidade;
         public int DataNacimento;
-        public double NumeroDeCelular;
+        public string NumeroDeCelular;
         public double NumeroFixo;
         public string Endereso;
         public string Email;
-        public double RG;
-        public double cpf;
+        public string RG;
+        public string cpf;
         public int idade;
         public string sexo;
         public string esteadocivil;

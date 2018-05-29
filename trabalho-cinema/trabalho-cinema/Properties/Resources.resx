@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-<<<<<<< HEAD
+
   <data name="font-selection-editor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\font-selection-editor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
+  </data>
   <data name="restart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\restart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> 32cd47ba8d014003b398b1368098e67424f93f89
+
   </data>
   <data name="x-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\x-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -135,16 +135,17 @@
   <data name="diskette" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diskette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
+
   <data name="add-button-inside-black-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add-button-inside-black-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
+  
+  </data>
   <data name="plus-symbol-in-a-rounded-black-square" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plus-symbol-in-a-rounded-black-square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="clipboard-with-pencil-" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clipboard-with-pencil-.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> 32cd47ba8d014003b398b1368098e67424f93f89
+
   </data>
   <data name="a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

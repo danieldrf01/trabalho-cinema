@@ -19,7 +19,7 @@ namespace trabalho_cinema
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            new CadastroFuncionario().Show();
         }
 
         private void listaFuncionario_Load(object sender, EventArgs e)

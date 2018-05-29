@@ -53,8 +53,8 @@
             this.maskedDataDeNacimento = new System.Windows.Forms.MaskedTextBox();
             this.mbRG = new System.Windows.Forms.MaskedTextBox();
             this.mbCPF = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.mtbNumeroCelular = new System.Windows.Forms.MaskedTextBox();
+            this.mtbNumeroFixo = new System.Windows.Forms.MaskedTextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cbsexo = new System.Windows.Forms.ComboBox();
@@ -143,6 +143,17 @@
             // cbNacionalidade
             // 
             this.cbNacionalidade.FormattingEnabled = true;
+            this.cbNacionalidade.Items.AddRange(new object[] {
+            "Brasileiro",
+            "Português",
+            "Francesa",
+            "Espanhola",
+            "Italiano",
+            "Argentina",
+            "Uruguaio",
+            "Chileno",
+            "Chines",
+            "Mexicano"});
             this.cbNacionalidade.Location = new System.Drawing.Point(93, 228);
             this.cbNacionalidade.Name = "cbNacionalidade";
             this.cbNacionalidade.Size = new System.Drawing.Size(288, 21);
@@ -218,14 +229,14 @@
             this.txtEstadoCivil.Location = new System.Drawing.Point(560, 425);
             this.txtEstadoCivil.Name = "txtEstadoCivil";
             this.txtEstadoCivil.Size = new System.Drawing.Size(179, 20);
-            this.txtEstadoCivil.TabIndex = 14;
+            this.txtEstadoCivil.TabIndex = 13;
             // 
             // txtCargo
             // 
             this.txtCargo.Location = new System.Drawing.Point(560, 493);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(179, 20);
-            this.txtCargo.TabIndex = 15;
+            this.txtCargo.TabIndex = 14;
             // 
             // lbCargo
             // 
@@ -280,7 +291,7 @@
             this.mbRG.Mask = "0.000.000";
             this.mbRG.Name = "mbRG";
             this.mbRG.Size = new System.Drawing.Size(100, 20);
-            this.mbRG.TabIndex = 26;
+            this.mbRG.TabIndex = 9;
             // 
             // mbCPF
             // 
@@ -288,31 +299,28 @@
             this.mbCPF.Mask = "000.000-00";
             this.mbCPF.Name = "mbCPF";
             this.mbCPF.Size = new System.Drawing.Size(100, 20);
-            this.mbCPF.TabIndex = 26;
-            this.mbCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
+            this.mbCPF.TabIndex = 10;
             // 
-            // maskedTextBox3
+            // mtbNumeroCelular
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(94, 425);
-            this.maskedTextBox3.Mask = "(999) 000-0000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(219, 20);
-            this.maskedTextBox3.TabIndex = 27;
-            this.maskedTextBox3.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox3_MaskInputRejected);
+            this.mtbNumeroCelular.Location = new System.Drawing.Point(94, 425);
+            this.mtbNumeroCelular.Mask = "(99) 000-0000";
+            this.mtbNumeroCelular.Name = "mtbNumeroCelular";
+            this.mtbNumeroCelular.Size = new System.Drawing.Size(219, 20);
+            this.mtbNumeroCelular.TabIndex = 5;
             // 
-            // maskedTextBox4
+            // mtbNumeroFixo
             // 
-            this.maskedTextBox4.Location = new System.Drawing.Point(94, 493);
-            this.maskedTextBox4.Mask = "(999) 000-0000";
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(219, 20);
-            this.maskedTextBox4.TabIndex = 27;
+            this.mtbNumeroFixo.Location = new System.Drawing.Point(94, 493);
+            this.mtbNumeroFixo.Mask = "(99) 000-0000";
+            this.mtbNumeroFixo.Name = "mtbNumeroFixo";
+            this.mtbNumeroFixo.Size = new System.Drawing.Size(219, 20);
+            this.mtbNumeroFixo.TabIndex = 6;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Blue;
-            this.button2.Image = global::trabalho_cinema.Properties.Resources.diskette;
             this.button2.Location = new System.Drawing.Point(756, 542);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 47);
@@ -325,8 +333,6 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Image = global::trabalho_cinema.Properties.Resources.x_button;
             this.button1.Location = new System.Drawing.Point(520, 541);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 47);
@@ -334,14 +340,18 @@
             this.button1.Text = "Cancelar";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
+          
             // 
             // cbsexo
             // 
             this.cbsexo.FormattingEnabled = true;
+            this.cbsexo.Items.AddRange(new object[] {
+            "Feminino",
+            "Masculino"});
             this.cbsexo.Location = new System.Drawing.Point(557, 355);
             this.cbsexo.Name = "cbsexo";
             this.cbsexo.Size = new System.Drawing.Size(121, 21);
-            this.cbsexo.TabIndex = 28;
+            this.cbsexo.TabIndex = 12;
             // 
             // CadastroFuncionario
             // 
@@ -349,8 +359,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 647);
             this.Controls.Add(this.cbsexo);
-            this.Controls.Add(this.maskedTextBox4);
-            this.Controls.Add(this.maskedTextBox3);
+            this.Controls.Add(this.mtbNumeroFixo);
+            this.Controls.Add(this.mtbNumeroCelular);
             this.Controls.Add(this.mbCPF);
             this.Controls.Add(this.mbRG);
             this.Controls.Add(this.maskedDataDeNacimento);
@@ -416,8 +426,8 @@
         private System.Windows.Forms.MaskedTextBox maskedDataDeNacimento;
         private System.Windows.Forms.MaskedTextBox mbRG;
         private System.Windows.Forms.MaskedTextBox mbCPF;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.MaskedTextBox mtbNumeroCelular;
+        private System.Windows.Forms.MaskedTextBox mtbNumeroFixo;
         private System.Windows.Forms.ComboBox cbsexo;
     }
 }

@@ -111,7 +111,7 @@
             // 
             this.btApagar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btApagar.ForeColor = System.Drawing.Color.Red;
-            this.btApagar.Image = global::trabalho_cinema.Properties.Resources.delete;
+           
             this.btApagar.Location = new System.Drawing.Point(430, 12);
             this.btApagar.Name = "btApagar";
             this.btApagar.Size = new System.Drawing.Size(116, 47);
@@ -125,7 +125,7 @@
             // 
             this.btEditar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btEditar.Image = global::trabalho_cinema.Properties.Resources.font_selection_editor;
+            
             this.btEditar.Location = new System.Drawing.Point(300, 13);
             this.btEditar.Name = "btEditar";
             this.btEditar.Size = new System.Drawing.Size(124, 47);
@@ -139,7 +139,7 @@
             // 
             this.btCadastar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCadastar.ForeColor = System.Drawing.Color.Blue;
-            this.btCadastar.Image = global::trabalho_cinema.Properties.Resources.add_button_inside_black_circle;
+           
             this.btCadastar.Location = new System.Drawing.Point(147, 12);
             this.btCadastar.Name = "btCadastar";
             this.btCadastar.Size = new System.Drawing.Size(147, 47);
@@ -152,7 +152,7 @@
             // btAtualizar
             // 
             this.btAtualizar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAtualizar.Image = global::trabalho_cinema.Properties.Resources.refresh_button;
+          
             this.btAtualizar.Location = new System.Drawing.Point(12, 12);
             this.btAtualizar.Name = "btAtualizar";
             this.btAtualizar.Size = new System.Drawing.Size(129, 47);
