@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace trabalho_cinema
 {
-    public partial class listaFuncionario : Form
+    public partial class ListaCliente : Form
     {
-        public listaFuncionario()
+        public ListaCliente()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void listaFuncionario_Load(object sender, EventArgs e)
-        {
-
+            new cb().ShowDialog();
         }
     }
 }

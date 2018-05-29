@@ -44,7 +44,7 @@ namespace trabalho_cinema
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
+            new ListaCliente().Show();
         }
 
         private void button6_Click(object sender, EventArgs e)

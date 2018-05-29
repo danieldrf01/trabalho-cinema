@@ -10,50 +10,133 @@ using System.Windows.Forms;
 
 namespace trabalho_cinema
 {
-    public partial class CadastroCliente : Form
+    public partial class cb : Form
     {
-        public CadastroCliente()
+        
+        public cb()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+           
+            if (txtNome.Text.Length < 4)
+            {
+                MessageBox.Show("Nome deve conter pelo menos 4 caracteres");
+                txtNome.Focus();
+                return;
+            }
 
-        }
+            try
+            {
+                int cpf = Convert.ToInt32(mbCpf.Text);
+            }
+            catch
+            {
+                MessageBox.Show("CPF deve conter somente números");
+                mbCpf.Focus();
+                return;
+            }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+            if (mbCpf.Text.Length < 11)
+            {
+                MessageBox.Show("CPF Deve conter 11 digitos");
+                mbCpf.Focus();
+                return;
+            }
 
-        }
+            if (txtEmail.Text.Length < 0)
+            {
+                MessageBox.Show("Digite o E-mail");
+                txtEmail.Focus();
+            }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-            
-        }
+            if (cbSexo.Text.Length < 0)
+            {
+                MessageBox.Show("Selecione o SEXO");
+                cbSexo.DroppedDown = true;
+                return;
+            }
 
-        private void CadastroCliente_Load(object sender, EventArgs e)
-        {
+            if (cbEstado.Text.Length < 0)
+            {
+                MessageBox.Show("Selecione O ESTADO");
+                cbEstado.DroppedDown = true;
+                return;
+            }
 
-        }
+            if (txtCidade.Text.Length < 0)
+            {
+                MessageBox.Show("Selecione a CIDADE");
+                txtCidade.Focus();
+                return;
+            }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
+            if (txtEndereco.Text.Length < 0)
+            {
+                MessageBox.Show("Digite o ENDEREÇO");
+                txtEndereco.Focus();
+                return;
+            }
 
-        }
+            if (txtNumero.Text.Length < 0)
+            {
+                MessageBox.Show("Digite o NÚMERO");
+                txtNumero.Focus();
+                return;
+            }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
+            try
+            {
+                int numero = Convert.ToInt32(txtNumero.Text);
+            }
+            catch 
+            {
+                MessageBox.Show("Número deve conter somente algarismos");
+                return;
+            }
 
-        }
+            if (txtBairro.Text.Length < 0)
+            {
+                MessageBox.Show("Digite o bairro");
+                txtBairro.Focus();
+                return;
+            }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-            
-        }
+            if (mbCep.Text.Length < 0)
+            {
+                MessageBox.Show("Digite o CEP");
+                return;
+            }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
+            try
+            {
+                int cep = Convert.ToInt32(mbCep.Text);
+            }
+            catch 
+            {
+                MessageBox.Show("Cep deve conter somente números");
+                return;
+            }
+
+            if (txtTelefone.Text.Length < 0)
+            {
+                MessageBox.Show("Digite um Telefone");
+                txtTelefone.Focus();
+                return;
+            }
+
+            try
+            {
+                int telefone = Convert.ToInt32(txtTelefone.Text);
+            }
+            catch 
+            {
+                MessageBox.Show("Telefone deve conter somente números");
+                return;
+            }
+
 
         }
     }

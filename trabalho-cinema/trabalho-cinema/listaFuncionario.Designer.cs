@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btAtualizar = new System.Windows.Forms.Button();
-            this.btCadastar = new System.Windows.Forms.Button();
-            this.btApagar = new System.Windows.Forms.Button();
-            this.btEditar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2Nicionalidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,48 +36,12 @@
             this.Column5Idade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Busca = new System.Windows.Forms.Label();
             this.txtBusca = new System.Windows.Forms.TextBox();
+            this.btApagar = new System.Windows.Forms.Button();
+            this.btEditar = new System.Windows.Forms.Button();
+            this.btCadastar = new System.Windows.Forms.Button();
+            this.btAtualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btAtualizar
-            // 
-            this.btAtualizar.Location = new System.Drawing.Point(12, 12);
-            this.btAtualizar.Name = "btAtualizar";
-            this.btAtualizar.Size = new System.Drawing.Size(75, 23);
-            this.btAtualizar.TabIndex = 0;
-            this.btAtualizar.Text = "Atualizar";
-            this.btAtualizar.UseVisualStyleBackColor = true;
-            this.btAtualizar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btCadastar
-            // 
-            this.btCadastar.Location = new System.Drawing.Point(93, 12);
-            this.btCadastar.Name = "btCadastar";
-            this.btCadastar.Size = new System.Drawing.Size(75, 23);
-            this.btCadastar.TabIndex = 0;
-            this.btCadastar.Text = "Cadastrar";
-            this.btCadastar.UseVisualStyleBackColor = true;
-            this.btCadastar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btApagar
-            // 
-            this.btApagar.Location = new System.Drawing.Point(255, 12);
-            this.btApagar.Name = "btApagar";
-            this.btApagar.Size = new System.Drawing.Size(75, 23);
-            this.btApagar.TabIndex = 0;
-            this.btApagar.Text = "Apagar";
-            this.btApagar.UseVisualStyleBackColor = true;
-            this.btApagar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btEditar
-            // 
-            this.btEditar.Location = new System.Drawing.Point(174, 12);
-            this.btEditar.Name = "btEditar";
-            this.btEditar.Size = new System.Drawing.Size(75, 23);
-            this.btEditar.TabIndex = 0;
-            this.btEditar.Text = "Edetar";
-            this.btEditar.UseVisualStyleBackColor = true;
-            this.btEditar.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -133,18 +93,74 @@
             // Busca
             // 
             this.Busca.AutoSize = true;
+            this.Busca.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Busca.Location = new System.Drawing.Point(575, 12);
             this.Busca.Name = "Busca";
-            this.Busca.Size = new System.Drawing.Size(40, 13);
+            this.Busca.Size = new System.Drawing.Size(56, 19);
             this.Busca.TabIndex = 2;
             this.Busca.Text = "Buscar";
             // 
             // txtBusca
             // 
-            this.txtBusca.Location = new System.Drawing.Point(578, 39);
+            this.txtBusca.Location = new System.Drawing.Point(579, 39);
             this.txtBusca.Name = "txtBusca";
             this.txtBusca.Size = new System.Drawing.Size(206, 20);
             this.txtBusca.TabIndex = 3;
+            // 
+            // btApagar
+            // 
+            this.btApagar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btApagar.ForeColor = System.Drawing.Color.Red;
+            this.btApagar.Image = global::trabalho_cinema.Properties.Resources.delete;
+            this.btApagar.Location = new System.Drawing.Point(430, 12);
+            this.btApagar.Name = "btApagar";
+            this.btApagar.Size = new System.Drawing.Size(116, 47);
+            this.btApagar.TabIndex = 0;
+            this.btApagar.Text = "Apagar";
+            this.btApagar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btApagar.UseVisualStyleBackColor = true;
+            this.btApagar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btEditar
+            // 
+            this.btEditar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btEditar.Image = global::trabalho_cinema.Properties.Resources.font_selection_editor;
+            this.btEditar.Location = new System.Drawing.Point(300, 13);
+            this.btEditar.Name = "btEditar";
+            this.btEditar.Size = new System.Drawing.Size(124, 47);
+            this.btEditar.TabIndex = 0;
+            this.btEditar.Text = "Edetar";
+            this.btEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btEditar.UseVisualStyleBackColor = true;
+            this.btEditar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btCadastar
+            // 
+            this.btCadastar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCadastar.ForeColor = System.Drawing.Color.Blue;
+            this.btCadastar.Image = global::trabalho_cinema.Properties.Resources.add_button_inside_black_circle;
+            this.btCadastar.Location = new System.Drawing.Point(147, 12);
+            this.btCadastar.Name = "btCadastar";
+            this.btCadastar.Size = new System.Drawing.Size(147, 47);
+            this.btCadastar.TabIndex = 0;
+            this.btCadastar.Text = "Cadastrar";
+            this.btCadastar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btCadastar.UseVisualStyleBackColor = true;
+            this.btCadastar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btAtualizar
+            // 
+            this.btAtualizar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAtualizar.Image = global::trabalho_cinema.Properties.Resources.refresh_button;
+            this.btAtualizar.Location = new System.Drawing.Point(12, 12);
+            this.btAtualizar.Name = "btAtualizar";
+            this.btAtualizar.Size = new System.Drawing.Size(129, 47);
+            this.btAtualizar.TabIndex = 0;
+            this.btAtualizar.Text = "Atualizar";
+            this.btAtualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btAtualizar.UseVisualStyleBackColor = true;
+            this.btAtualizar.Click += new System.EventHandler(this.button1_Click);
             // 
             // listaFuncionario
             // 

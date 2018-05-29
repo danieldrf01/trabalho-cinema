@@ -73,9 +73,15 @@ namespace trabalho_cinema.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap add_button_inside_black_circle {
             get {
                 object obj = ResourceManager.GetObject("add-button-inside-black-circle", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap clipboard_with_pencil_ {
+            get {
+                object obj = ResourceManager.GetObject("clipboard-with-pencil-", resourceCulture);
+>>>>>>> 32cd47ba8d014003b398b1368098e67424f93f89
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +109,15 @@ namespace trabalho_cinema.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap font_selection_editor {
             get {
                 object obj = ResourceManager.GetObject("font-selection-editor", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap plus_symbol_in_a_rounded_black_square {
+            get {
+                object obj = ResourceManager.GetObject("plus-symbol-in-a-rounded-black-square", resourceCulture);
+>>>>>>> 32cd47ba8d014003b398b1368098e67424f93f89
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,6 +135,19 @@ namespace trabalho_cinema.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
+=======
+        internal static System.Drawing.Bitmap restart {
+            get {
+                object obj = ResourceManager.GetObject("restart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+>>>>>>> 32cd47ba8d014003b398b1368098e67424f93f89
         internal static System.Drawing.Bitmap x_button {
             get {
                 object obj = ResourceManager.GetObject("x-button", resourceCulture);
