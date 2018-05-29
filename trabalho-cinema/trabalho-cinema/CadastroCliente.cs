@@ -10,12 +10,33 @@ using System.Windows.Forms;
 
 namespace trabalho_cinema
 {
-    public partial class cb : Form
+    public partial class CadastroCliente : Form
     {
+        private int posicao = -1;
         
-        public cb()
+        public CadastroCliente()
         {
             InitializeComponent();
+        }
+
+        public CadastroCliente(Cliente cliente, int posicao)
+        {
+            InitializeComponent();
+            this.posicao = posicao;
+
+            txtNome.Text = cliente.Nome;
+            mbCpf.Text = Convert.ToString(cliente.Cpf);
+            cbSexo.SelectedItem = cliente.Sexo;
+            cbEstado.SelectedItem = cliente.Estado;
+            txtEmail.Text = cliente.Email;
+            mbDataDeNascimento.Text = Convert.ToString(cliente.DataDeNascimento);
+            txtCidade.Text = cliente.Cidade;
+            txtEndereco.Text = cliente.Endereco;
+            txtNumero.Text = Convert.ToString(cliente.Numero);
+            txtComplemento.Text = cliente.Complemento;
+            txtTelefone.Text = Convert.ToString(cliente.Telefone);
+            txtBairro.Text = cliente.Bairro;
+            mbCep.Text = Convert.ToString(cliente.Cep);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -25,17 +46,6 @@ namespace trabalho_cinema
             {
                 MessageBox.Show("Nome deve conter pelo menos 4 caracteres");
                 txtNome.Focus();
-                return;
-            }
-
-            try
-            {
-                int cpf = Convert.ToInt32(mbCpf.Text.Replace(".", "").Replace("-", ""));
-            }
-            catch
-            {
-                MessageBox.Show("CPF deve conter somente números");
-                mbCpf.Focus();
                 return;
             }
 
@@ -52,14 +62,14 @@ namespace trabalho_cinema
                 txtEmail.Focus();
             }
 
-            if (cbSexo.Text.Length < 0)
+            if (cbSexo.SelectedIndex < 0)
             {
                 MessageBox.Show("Selecione o SEXO");
                 cbSexo.DroppedDown = true;
                 return;
             }
 
-            if (cbEstado.Text.Length < 0)
+            if (cbEstado.SelectedIndex < 0)
             {
                 MessageBox.Show("Selecione O ESTADO");
                 cbEstado.DroppedDown = true;
@@ -112,7 +122,8 @@ namespace trabalho_cinema
 
             try
             {
-                int cep = Convert.ToInt32(mbCep.Text);
+                string cep = (mbCep.Text.Replace("-", ""));
+            
             }
             catch 
             {
@@ -137,7 +148,61 @@ namespace trabalho_cinema
                 return;
             }
 
+            Cliente cliente = new Cliente() 
+            {
 
+            Nome = txtNome.Text,
+            Cpf = mbCpf.Text,
+            Sexo = Convert.ToString(cbSexo.SelectedItem),
+            Estado = Convert.ToString(cbEstado.SelectedItem),
+            Email = txtEmail.Text,
+            DataDeNascimento = Convert.ToInt32(mbDataDeNascimento.Text),
+            Cidade = txtCidade.Text,
+            Endereco = txtEndereco.Text,
+            Numero = Convert.ToInt32(txtNumero.Text),
+            Complemento = txtComplemento.Text,
+            Telefone = Convert.ToInt32(txtTelefone.Text),
+            Bairro = txtBairro.Text,
+            Cep = mbCep.Text 
+
+            };
+
+            if (posicao >= 0)
+            {
+                Program.clientes[posicao] = cliente;
+                MessageBox.Show("Cadastro alterado com sucesso");
+            }
+
+            else
+            {
+                Program.clientes.Add(cliente);
+                MessageBox.Show("Cadastro realizado com sucesso");
+            }
+                LimparCampos();
+                 
+            }
+
+        private void LimparCampos()
+        {
+            txtNome.Text = "";
+            txtEmail.Text = "";
+            txtCidade.Text = "";
+            txtEndereco.Text = "";
+            txtNumero.Text = "";
+            txtComplemento.Text = ""; 
+            txtTelefone.Text = "";
+            txtBairro.Text = "";
+            mbCpf.Text = "";
+            cbSexo.SelectedIndex = -1;
+            cbEstado.SelectedIndex = -1;
+            mbDataDeNascimento.Text = "";
+            mbCep.Text = "";
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dispose();
         }
     }
 }

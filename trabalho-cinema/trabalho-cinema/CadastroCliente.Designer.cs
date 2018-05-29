@@ -1,6 +1,6 @@
 ﻿namespace trabalho_cinema
 {
-    partial class cb
+    partial class CadastroCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -340,6 +340,7 @@
             this.button1.Text = "Cancelar";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
+           
             // 
             // txtNome
             // 
