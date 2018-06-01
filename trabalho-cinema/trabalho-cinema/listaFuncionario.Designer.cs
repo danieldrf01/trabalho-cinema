@@ -111,12 +111,11 @@
             // 
             this.btApagar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btApagar.ForeColor = System.Drawing.Color.Red;
-           
             this.btApagar.Location = new System.Drawing.Point(430, 12);
             this.btApagar.Name = "btApagar";
             this.btApagar.Size = new System.Drawing.Size(116, 47);
             this.btApagar.TabIndex = 0;
-            this.btApagar.Text = "Apagar";
+            this.btApagar.Text = "Limpar";
             this.btApagar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btApagar.UseVisualStyleBackColor = true;
             this.btApagar.Click += new System.EventHandler(this.button1_Click);
@@ -125,12 +124,11 @@
             // 
             this.btEditar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            
             this.btEditar.Location = new System.Drawing.Point(300, 13);
             this.btEditar.Name = "btEditar";
             this.btEditar.Size = new System.Drawing.Size(124, 47);
             this.btEditar.TabIndex = 0;
-            this.btEditar.Text = "Edetar";
+            this.btEditar.Text = "Editar";
             this.btEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btEditar.UseVisualStyleBackColor = true;
             this.btEditar.Click += new System.EventHandler(this.button1_Click);
@@ -139,7 +137,6 @@
             // 
             this.btCadastar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCadastar.ForeColor = System.Drawing.Color.Blue;
-           
             this.btCadastar.Location = new System.Drawing.Point(147, 12);
             this.btCadastar.Name = "btCadastar";
             this.btCadastar.Size = new System.Drawing.Size(147, 47);
@@ -152,7 +149,6 @@
             // btAtualizar
             // 
             this.btAtualizar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-          
             this.btAtualizar.Location = new System.Drawing.Point(12, 12);
             this.btAtualizar.Name = "btAtualizar";
             this.btAtualizar.Size = new System.Drawing.Size(129, 47);

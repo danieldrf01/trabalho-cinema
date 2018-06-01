@@ -4,21 +4,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace trabalho_cinema
+namespace TRABALHO_CINEMA
 {
     static class Program
     {
-        public static List<Cliente> clientes = new List<Cliente>();
-
         /// <summary>
-        /// The main entry point for the application.
+        /// Ponto de entrada principal para o aplicativo.
         /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Principal());
+            Application.Run(new FuncionarioForm());
         }
     }
 }

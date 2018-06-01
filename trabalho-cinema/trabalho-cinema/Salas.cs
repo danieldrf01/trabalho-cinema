@@ -1,30 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace trabalho_cinema
+namespace TRABALHO_CINEMA
 {
-    public partial class Salas : Form
+   public class salas:IModel
     {
-        public Salas()
-        {
-            InitializeComponent();
-        }
+        public string sala;
+        public string setor;
+        public string horariodisponivel;
+        public string Datadisp;
+        public string quantsalas;
+        public string quantacentos;
+        public string tiposacentos;
+        public string larguraS;
 
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        public int id { get; set; }
+        public string nome { get; set ; }
     }
 }
