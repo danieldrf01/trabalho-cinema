@@ -51,9 +51,9 @@ namespace trabalho_cinema
                 return;
             }
 
-            int linhaSelecionada1 = dgvListaCliente.CurrentRow.Index;
-            Cliente peca = Program.clientes[linhaSelecionada];
-            new CadastroCliente(peca, linhaSelecionada1).ShowDialog();
+             linhaSelecionada = dgvListaCliente.CurrentRow.Index;
+            Cliente cliente = Program.clientes[linhaSelecionada];
+            new CadastroCliente(cliente, linhaSelecionada).ShowDialog();
         
         }
 
@@ -98,12 +98,6 @@ namespace trabalho_cinema
                 AtualizarLista();
             }
         }
-
-        private void txtBusca_Leave(object sender, EventArgs e)
-        {
-            AtualizarLista();
-        }
-
 
         }
 

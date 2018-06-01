@@ -9,6 +9,9 @@ namespace trabalho_cinema
     static class Program
     {
         public static List<Cliente> clientes = new List<Cliente>();
+        public static List<Programacao> programacoes = new List<Programacao>();
+        public static List<Fornecedor> fornecedores = new List<Fornecedor>();
+        public static List<Equipamento> equipamentos = new List<Equipamento>();
 
         /// <summary>
         /// The main entry point for the application.

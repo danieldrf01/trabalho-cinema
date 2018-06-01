@@ -50,12 +50,50 @@
     <Compile Include="CadastroCliente.Designer.cs">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroEquipamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroEquipamento.Designer.cs">
+      <DependentUpon>CadastroEquipamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroFornecedor.Designer.cs">
+      <DependentUpon>CadastroFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroProgramacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroProgramacao.Designer.cs">
+      <DependentUpon>CadastroProgramacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente.cs" />
+    <Compile Include="Equipamento.cs" />
+    <Compile Include="Fornecedor.cs" />
     <Compile Include="ListaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ListaCliente.Designer.cs">
       <DependentUpon>ListaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaEquipamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaEquipamento.Designer.cs">
+      <DependentUpon>ListaEquipamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaFornecedor.Designer.cs">
+      <DependentUpon>ListaFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaProgramacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaProgramacao.Designer.cs">
+      <DependentUpon>ListaProgramacao.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -64,12 +102,31 @@
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Programacao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CadastroEquipamento.resx">
+      <DependentUpon>CadastroEquipamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroFornecedor.resx">
+      <DependentUpon>CadastroFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroProgramacao.resx">
+      <DependentUpon>CadastroProgramacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListaCliente.resx">
       <DependentUpon>ListaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaEquipamento.resx">
+      <DependentUpon>ListaEquipamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaFornecedor.resx">
+      <DependentUpon>ListaFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaProgramacao.resx">
+      <DependentUpon>ListaProgramacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
