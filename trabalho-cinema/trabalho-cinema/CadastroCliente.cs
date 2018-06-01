@@ -202,5 +202,10 @@ namespace trabalho_cinema
         {
             Dispose();
         }
+
+        private void CadastroCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

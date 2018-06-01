@@ -17,39 +17,32 @@ namespace trabalho_cinema
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new listaFuncionario().Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
-          
+<<<<<<< HEAD
+            new ListaCliente().Show();
+=======
+            new listaFuncionario().Show();
+>>>>>>> 14ad8eac3dfe3c6b8b5f57cec6a1455cfef9c96c
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            new ListaProgramacao().Show();
+        }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+<<<<<<< HEAD
+            new ListaFornecedor().Show();
+=======
+          
+>>>>>>> 14ad8eac3dfe3c6b8b5f57cec6a1455cfef9c96c
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            new ListaEquipamento().Show();
         }
     }
 }
