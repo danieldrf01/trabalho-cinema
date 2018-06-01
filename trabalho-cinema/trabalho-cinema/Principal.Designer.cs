@@ -194,8 +194,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackgroundImage = global::trabalho_cinema.Properties.Resources.a;
             this.ClientSize = new System.Drawing.Size(950, 550);
+=======
+           
+            this.ClientSize = new System.Drawing.Size(853, 479);
+>>>>>>> 14ad8eac3dfe3c6b8b5f57cec6a1455cfef9c96c
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
